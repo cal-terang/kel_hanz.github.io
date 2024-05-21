@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal's Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #007bff;
+        }
+        section {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            margin-bottom: 1em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #007bff;
+            color: white;
+        }
+        .contact-form, .subscribe-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label, .subscribe-form label {
+            margin-top: 0.5em;
+        }
+        .contact-form input, .contact-form textarea, .subscribe-form input {
+            margin-top: 0.5em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button, .subscribe-form button {
+            margin-top: 1em;
+            padding: 0.7em;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover, .subscribe-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cal's Personal Webpage</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#achievements">Academic Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is Cal, and I am currently a university student pursuing a MA/M.Sc in Geography and Disaster Management. I have a deep passion for understanding the dynamics of our environment and the challenges posed by natural disasters. Through my studies and projects, I aim to contribute to the field of disaster management and help in creating a safer world.</p>
+    </section>
+    <section id="achievements">
+        <h2>Academic Achievements</h2>
+        <ul>
+            <li>Bachelor's degree in Geography with honours</li>
+            <li>Dean's List for academic excellence</li>
+            <li>Research paper published on flood risk management</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Flood Risk Management Study:</strong> An in-depth analysis of flood-prone areas and mitigation strategies.</li>
+            <li><strong>Earthquake Preparedness Program:</strong> Developed a comprehensive guide and workshop for community earthquake preparedness.</li>
+            <li><strong>GIS Mapping Project:</strong> Utilised GIS technology to map vulnerable areas in urban settings.</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section id="subscribe">
+        <h2>Subscribe</h2>
+        <form class="subscribe-form">
+            <label for="subscribe-email">Email:</label>
+            <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Cal's Personal Webpage. All rights reserved.</p>
+        <a href="Cal_CV.pdf" download style="color: white;">Download CV</a>
+    </footer>
+</body>
+</html>
